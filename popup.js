@@ -18,8 +18,11 @@ function getValues() {
 }
 
 function highlightStuff(qs, color){
-    document.querySelectorAll('iframe')[0].contentDocument.querySelectorAll(qs).forEach(x => x.offsetParent.style.backgroundColor=color);
     document.querySelectorAll(qs).forEach(x => x.offsetParent.style.backgroundColor=color);
+
+    document.querySelectorAll('iframe').forEach(iframe => {
+        iframe.contentDocument.querySelectorAll(qs).forEach(x => x.offsetParent.style.backgroundColor=color);
+    });
 }
 
 document.getElementById("highlight").addEventListener("click", getValues);
