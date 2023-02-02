@@ -1,6 +1,6 @@
 {
-  "name": "JiraHighlighter",
-  "description": "Highlights Jira Elements based on your query selector",
+  "name": "Highlighter",
+  "description": "Highlights HTML Elements based on your query selector",
   "version": "1.0",
   "manifest_version": 3,
   "permissions": [
@@ -10,14 +10,14 @@
     "scripting"
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "ui/scripts/background.js"
   },
   "action": {
-    "default_title": "JiraHighlighter",
-    "default_popup": "popup.html",
-    "default_icon": "jh.png"
+    "default_title": "Highlighter",
+    "default_popup": "ui/html/popup.html",
+    "default_icon": "images/h.png"
   },
   "icons": {
-    "16": "jh.png"
+    "16": "images/h.png"
   }
 }

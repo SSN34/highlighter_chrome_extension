@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jira Highlighter</title>
+        <link rel="stylesheet" href="../styles/popup_style.css" />
+        <script src="../scripts/theme_packs.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div id="icon">
+                    <img
+                        src="../../images/h.png"
+                        alt="Jira Highlighter"
+                        width="30"
+                    />
+                </div>
+                <div id="name">Highlighter</div>
+            </div>
+            <div class="form spacing10">
+                <div class="form-field">
+                    <input
+                        type="text"
+                        name="selector"
+                        id="selector"
+                        placeholder="Enter the Query Selector"
+                    />
+                    <input type="color" name="color" id="color" />
+                </div>
+                <div id="button-container">
+                    <button id="highlight">Highlight</button>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="theme-pack spacing10">
+                <div class="heading">Theme Packs</div>
+                <div id="theme-container"></div>
+            </div>
+            <div class="separator"></div>
+            <div class="pack-details spacing10">
+                <div class="header">
+                    <div class="heading">Pack Details</div>
+                    <div id="pack-name"></div>
+                </div>
+                <div>
+                    <table id="details-table" width="100%"></table>
+                </div>
+            </div>
+        </div>
+        <script src="../scripts/popup.js"></script>
+    </body>
+</html>
